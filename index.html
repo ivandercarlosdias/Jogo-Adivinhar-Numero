@@ -10,8 +10,28 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Adivinhe meu número</h1>
+    <div class="container container-game m-4 p-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <button class="p-2">Again!</button>
+            <p class="d-inline-block">(Between 1 and 50)</p>
+        </div>
+        <div class="text-center my-5">
+            <h1 class="mb-5">Guess my number</h1>
+            <div class="number-content">
+                <div class="number d-inline-block p-3 h1">?</div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-6 text-center">
+                <input type="number" class="p-2 d-inline-block guess">
+                <p><button class="p-2 mt-2">Check!</button></p>
+            </div>
+            <div class="col-6">
+                <p class="message">Start guessing...</p>
+                <p class="mt-5">Score: <span class="score">20</span></p>
+                <p>Highscore: <span class="highscore">0</span></p>
+            </div>
+        </div>
     </div>
 
     <script src="scripts.js"></script>
