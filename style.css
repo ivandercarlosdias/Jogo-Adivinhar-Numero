@@ -11,14 +11,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container-game {
-  border: 5px solid #ccc;
+  border: 3px solid whitesmoke;
 }
 
 .container-number {
   position: relative;
+  color: black;
 }
 
 .container-number:before {
@@ -29,13 +36,13 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  height: 3px;
-  background-color: #ccc;
+  height: 12px;
+  background-color: whitesmoke;
 }
 
 .number {
   min-width: 150px;
-  background-color: #ccc;
+  background-color: whitesmoke;
 }
 
 .guess {
@@ -43,4 +50,12 @@ body {
   min-width: 150px;
   max-width: 50%;
   border: 2px solid black;
+}
+
+.success {
+  background-color: #00A14E;
+}
+
+.error {
+  background-color: #F24357;
 }
